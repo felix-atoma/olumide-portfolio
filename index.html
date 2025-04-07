@@ -6,19 +6,19 @@
   <title>Olumide Buari | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body >
-   <!-- Loading Spinner -->
-<div id="loader-wrapper">
+<body class="fade-in">
+
+  <!-- Loading Spinner -->
+  <div id="loader-wrapper">
     <div class="loader"></div>
   </div>
-  
+
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container nav-flex">
       <h1 class="nav-logo">Olumide</h1>
       <button class="menu-toggle" id="menuToggle">☰</button>
-
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -40,26 +40,27 @@
       </div>
     </div>
   </header>
+
   <!-- ABOUT SECTION -->
-<section id="about" class="section">
+  <section id="about" class="section">
     <div class="container">
       <h2>About Me</h2>
       <p>I’m a self-taught developer transitioning into software development through platforms like Coursera, FreeCodeCamp, CS50x by Harvard, The Odin Project, and Udemy. With a background in business, data, and community engagement, I'm passionate about building tech that solves real-world problems and fosters inclusion.</p>
     </div>
   </section>
-  
+
   <!-- PROJECTS SECTION -->
   <section id="projects" class="section section-light">
     <div class="container">
       <h2>Projects</h2>
-  
+
       <div class="project-card">
         <h3>Weather App</h3>
         <p>Check real-time weather data for any city using a public API.</p>
         <p><strong>Skills:</strong> API integration, JavaScript, responsive design</p>
         <a href="#">GitHub</a> | <a href="#">Live Demo</a>
       </div>
-  
+
       <div class="project-card">
         <h3>To-Do List App</h3>
         <p>Organize your tasks and manage them easily with localStorage.</p>
@@ -68,7 +69,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- SKILLS SECTION -->
   <section id="skills" class="section">
     <div class="container">
@@ -80,7 +81,7 @@
         <li>React (Beginner)</li>
         <li>Figma</li>
       </ul>
-  
+
       <h3>Learning Platforms</h3>
       <ul>
         <li>Coursera</li>
@@ -91,7 +92,7 @@
       </ul>
     </div>
   </section>
-  
+
   <!-- CONTACT SECTION -->
   <section id="contact" class="section section-light">
     <div class="container">
@@ -102,22 +103,33 @@
       <p>LinkedIn: <a href="https://linkedin.com/in/olumide">linkedin.com/in/olumide</a></p>
     </div>
   </section>
-  
+
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Olumide Buari. Designed with purpose.</p>
   </footer>
-  
+
   <!-- Back to Top Button -->
-<button id="backToTop">⬆️</button>
-<!-- Spider Web Background -->
-<div id="particles-js"></div>
+  <button id="backToTop">⬆️</button>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Portfolio Assistant -->
+  <div id="assistant">
+    <button id="assistant-toggle">💬</button>
+    <div class="assistant-box" id="assistant-box">
+      <p id="assistant-message">Hi there! I’m Olumide’s Portfolio Assistant. What would you like to know?</p>
+      <div class="assistant-buttons">
+        <button onclick="showProjects()">📁 Projects</button>
+        <button onclick="showSkills()">🛠️ Skills</button>
+        <button onclick="showContact()">📬 Contact</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- Spider Web Background -->
+  <div id="particles-js"></div>
 
-  
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
